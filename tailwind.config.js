@@ -6,13 +6,14 @@ module.exports = {
     'public/*.{html,js}'
   ],
   theme: {
-    colors: {
-      'pink': '#FF0099',
-      'blue': '#38B4F2',
-      'purple': '#8468DE',
-      'green': '#C1E881'
+    extend: {
+      colors: {
+        'pink': '#FF0099',
+        'blue': '#38B4F2',
+        'purple': '#8468DE',
+        'green': '#C1E881'
+      }
     },
-    extend: {},
   },
   plugins: [],
 }
