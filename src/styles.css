@@ -5,3 +5,7 @@
 li {
     @apply text-xs py-1 pl-2
 }
+
+.info-row {
+    @apply px-16 flex h-full
+}
