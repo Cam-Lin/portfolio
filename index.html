@@ -5,37 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>Cam Acuna - Frontend developer</title>
 </head>
 <body>
     <header id="header">
         <div class="flex justify-between px-5 py-4 bg-purple text-green">
             <div>
-                <h1 class="font-bold text-2xl tracking-wider">Cam Acuna</h1>
+                <h1 class="text-2xl font-bold tracking-wider">Cam Acuna</h1>
             </div>
             <div>Menu</div>
         </div>
     </header>
     <main>
-        <section id="welcome-section" class="min-h-screen bg-pink">
+        <section id="welcome-section" class="h-screen bg-pink">
             <div class="grid grid-cols-3">
                 <div class="col-span-2">
-                    <h2 class="font-bold text-4xl p-5 bg-purple text-green tracking-wider">Frontend developer</h2>
+                    <h2 class="p-5 text-4xl font-bold tracking-wider bg-purple text-green">Frontend developer</h2>
                 </div>
                 <div class="col-span-1 bg-pink"></div>
             </div>
-            <div id='profile' class="py-8 px-16 tracking-wide font-light">
+            <div id='profile' class="px-16 py-8 font-light tracking-wide">
                 <p class="text-slate-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quibusdam velit vero dolorum voluptatibus autem suscipit impedit ut deleniti architecto.</p>
             </div>
-            <div id="skills" class="p-8 tracking-wide font-light italic">
-                <p>Skills:</p>
-                <ul>
-                    <li>JS</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Tailwind</li>
-                    <li>React</li>
-                </ul>
+            <div id="skills" class="grid justify-between grid-cols-2 p-8 px-16 italic font-light tracking-wide">
+                <div class="bg-green">
+                    <h4>Skills:</h4>
+                    <ul>
+                        <li>JS</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Tailwind</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <div class="bg-blue">
+                    <h4>Skills:</h4>
+                    <ul>
+                        <li>JS</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Tailwind</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#projects">scroll</a>
+            </div>
+        </section>
+        <section id="projects" class="h-screen bg-blue">
+            <div id="projects-title" class="grid grid-cols-3 h-1/4">
+                <div class="flex flex-col justify-center col-span-2 pl-5 bg-purple text-green">
+                    <h2 class="text-3xl font-bold tracking-wide">Projects</h2>
+                </div>
+                <div class="bg-blue"></div>
+            </div>
+            <div id='project-1' class="grid grid-rows-4 h-3/4">
+                <div class="relative flex items-center bg-slate-400">
+                    <h3 class="px-16 m-auto text-xl font-bold tracking-wide text-center">Bolter - Armor - Choppa!
+                    </h3>
+                    <div class="absolute right-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd"/>
+                        </svg> 
+                    </div>                 
+                </div>
+                <div class="info-row bg-green">
+                    <div class="my-auto overflow-hidden rounded shadow-lg h-4/5">
+                        <img src="./img/wh.png" alt="Screenshot of a project" class="object-cover"/>
+                    </div>
+                </div>
+                <div class="bg-red-300 info-row">
+                    <p class="m-auto text-xs font-light">A classic rock, paper, scissors  game given a WH40k treatment for fun.
+                        Working an interactive project with vanilla CSS and JS might be a hassle but its a great way to practice the basics.</p>
+                </div>
+                <div class="info-row bg-zinc-400">
+                    <div class="m-auto">next</div>
+                </div>
             </div>
         </section>
     </main>
