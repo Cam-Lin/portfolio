@@ -3,9 +3,17 @@
 @tailwind utilities;
 
 li {
-    @apply text-xs py-1 pl-2
+    @apply py-1 pl-2 text-xs;
 }
 
 .info-row {
-    @apply px-16 flex h-full
+    @apply flex h-full px-16;
+}
+
+.project-button {
+    @apply flex items-center justify-around min-w-full px-4 my-auto text-lg font-bold tracking-wide;
+}
+
+html {
+    @apply scroll-smooth;
 }

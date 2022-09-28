@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://kit.fontawesome.com/ee5fdf54f0.js" crossorigin="anonymous"></script>
     <title>Cam Acuna - Frontend developer</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
     </header>
     <main>
         <section id="welcome-section" class="h-screen bg-pink">
-            <div class="grid grid-cols-3">
+            <div class="grid grid-cols-3" id="welcome-header">
                 <div class="col-span-2">
                     <h2 class="p-5 text-4xl font-bold tracking-wider bg-purple text-green">Frontend developer</h2>
                 </div>
@@ -50,27 +51,66 @@
                     </ul>
                 </div>
             </div>
-            <div class="text-center">
-                <a href="#projects">scroll</a>
+            <div class="flex justify-center">
+                <a href="#projects">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd" />
+                      </svg>                       
+                </a>
             </div>
         </section>
         <section id="projects" class="h-screen bg-blue">
-            <div id="projects-title" class="grid grid-cols-3 h-1/4">
+            <div id="projects-header" class="grid grid-cols-3 h-1/4">
                 <div class="flex flex-col justify-center col-span-2 pl-5 bg-purple text-green">
                     <h2 class="text-3xl font-bold tracking-wide">Projects</h2>
                 </div>
                 <div class="bg-blue"></div>
             </div>
-            <div id='project-1' class="grid grid-rows-4 h-3/4">
-                <div class="relative flex items-center bg-slate-400">
-                    <h3 class="px-16 m-auto text-xl font-bold tracking-wide text-center">Bolter - Armor - Choppa!
-                    </h3>
-                    <div class="absolute right-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                            <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z" clip-rule="evenodd"/>
-                        </svg> 
-                    </div>                 
-                </div>
+            <div id='projects-index' class="grid grid-rows-4 h-3/4">
+                <div class="flex overflow-x-scroll bg-slate-400 scroll-smooth">
+                    <div class="project-button" id="project-1">
+                        <a>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="transparent" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M13.28 3.97a.75.75 0 010 1.06L6.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5a.75.75 0 010-1.06l7.5-7.5a.75.75 0 011.06 0zm6 0a.75.75 0 010 1.06L12.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5a.75.75 0 010-1.06l7.5-7.5a.75.75 0 011.06 0z" clip-rule="evenodd" />
+                                </svg>
+                        </a>
+                        <button>Bolter - Armor - Choppa!
+                        </button>
+                        <a href="#project-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                <path fill-rule="evenodd" d="M4.72 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 010-1.06zm6 0a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 010-1.06z" clip-rule="evenodd" />
+                            </svg> 
+                        </a>                         
+                    </div>
+                    <div class="project-button" id="project-2">
+                        <a href="#project-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M13.28 3.97a.75.75 0 010 1.06L6.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5a.75.75 0 010-1.06l7.5-7.5a.75.75 0 011.06 0zm6 0a.75.75 0 010 1.06L12.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5a.75.75 0 010-1.06l7.5-7.5a.75.75 0 011.06 0z" clip-rule="evenodd" />
+                                </svg>
+                        </a>
+                        <button>Pixel Go
+                        </button>
+                        <a href="#project-3" class="" id="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                                <path fill-rule="evenodd" d="M4.72 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 010-1.06zm6 0a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 010-1.06z" clip-rule="evenodd" />
+                            </svg> 
+                        </a>                         
+                    </div>
+                    <div class="project-button" id="project-3">
+                        <a href="#project-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M13.28 3.97a.75.75 0 010 1.06L6.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5a.75.75 0 010-1.06l7.5-7.5a.75.75 0 011.06 0zm6 0a.75.75 0 010 1.06L12.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5a.75.75 0 010-1.06l7.5-7.5a.75.75 0 011.06 0z" clip-rule="evenodd" />
+                                </svg>
+                        </a>
+                        <button>Coming Soon
+                        </button>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="transparent" class="w-6 h-6">
+                                <path fill-rule="evenodd" d="M4.72 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 010-1.06zm6 0a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 010-1.06z" clip-rule="evenodd" />
+                            </svg> 
+                        </a>                         
+                    </div>
+                </div> 
                 <div class="info-row bg-green">
                     <div class="my-auto overflow-hidden rounded shadow-lg h-4/5">
                         <img src="./img/wh.png" alt="Screenshot of a project" class="object-cover"/>
@@ -80,10 +120,42 @@
                     <p class="m-auto text-xs font-light">A classic rock, paper, scissors  game given a WH40k treatment for fun.
                         Working an interactive project with vanilla CSS and JS might be a hassle but its a great way to practice the basics.</p>
                 </div>
-                <div class="info-row bg-zinc-400">
-                    <div class="m-auto">next</div>
+                <div class="items-center justify-center info-row bg-zinc-400">
+                    <a href="#contact">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                            <path fill-rule="evenodd" d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z" clip-rule="evenodd" />
+                        </svg>                    
+                    </a>
                 </div>
             </div>
+        </section>
+        <section id="contact" class="h-screen">
+            <div id="contact-header" class="grid grid-cols-3 h-1/4">
+                <div class="flex flex-col justify-center col-span-2 pl-5 bg-purple text-green">
+                    <h2 class="text-3xl font-bold tracking-wide">Contact</h2>
+                </div>
+                <div class="bg-blue"></div>
+            </div>
+            <div class="flex flex-col px-16 h-2/4 bg-slate-400">
+                <h2 class="text-3xl font-bold tracking-wide">Say hello!</h2>
+                <div class="flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                      </svg>
+                    <p class="">c.avantm92@gmail.com</p>
+                </div>
+                <div class="flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                      </svg>                      
+                    <a href="#">Resume</a>
+                </div>
+                <div id="networks" class="flex">
+                    <i class="fa-brands fa-github fa-2xl"></i>
+                    <i class="fa-brands fa-linkedin fa-2xl"></i>
+                </div>
+            </div>
+            <div class="px-16 h-1/4 bg-blue"></div>
         </section>
     </main>
 </body>
